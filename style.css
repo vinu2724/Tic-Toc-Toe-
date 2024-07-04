@@ -48,7 +48,8 @@ font-family: 'Roboto', 'sans-sarif';
 
 }
 .imgbox img{
-    display: none;
+   width: 0;
+   transition: width 1s ease-in-out;
 
 }
 .br-0{
@@ -63,4 +64,31 @@ font-family: 'Roboto', 'sans-sarif';
 }
 .bb-0{
     border-bottom: 0;
+}
+#reset{
+    margin: 0 23px;
+    padding: 6px 14px;
+    background-color: rgb(54, 140, 49);
+    border-radius: 6px;
+    cursor: pointer;
+} 
+#reset:hover{
+    background-color: red;
+}
+@media  screen and (max-width:600px) 
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px ;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,30vw);  
+        grid-template-rows: repeat(3,30vw) ;
+    }
 }
